@@ -2,6 +2,7 @@ import Card from './components/Card'
 import Counter from './components/Counter'
 import NameForm from './components/NameForm'
 import ToggleButton from './components/ToggleButton'
+import CounterWithEffect from './components/CounterWithEffect'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Counter />
       <ToggleButton />
       <NameForm />
+      <CounterWithEffect />
     </section>
   )
 }
