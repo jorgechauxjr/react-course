@@ -9,7 +9,7 @@ const NameForm = () => {
     
     return (
         <>
-            <h3>Name Form</h3>
+            <h1>Name Form</h1>
             <input
                 type="text"
                 placeholder="Type your name..."
