@@ -1,5 +1,6 @@
 // import "./styles.css"
-import styles from "./Card.module.css"
+// import styles from "./Card.module.scss"
+import styles from "./Card.module.sass"
 
 const Card = () => {
     return (
