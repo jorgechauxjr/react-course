@@ -6,6 +6,9 @@ const [isLoading, setIsLoading] = useState(true);
 const [error, setError] = useState(null);
 
 useEffect(() => {
+    const sleep = (ms) =>
+    new Promise((resolve) => setTimeout(resolve, ms));
+
     const fetchUsers  = async () => {
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/users")
@@ -13,6 +16,7 @@ useEffect(() => {
                 throw new Error("Error al obtener los datos.")
             }
             const data = await response.json()
+            await sleep(3000)
             setUsers(data)    
             
         } catch (error) {

@@ -7,8 +7,9 @@ function App() {
 
   return (
     <>
-      <StaticComponent/>
-      <UserList />
+    {/* Descomentar la lineas para ver los componentes Static component y UserList */}
+      {/* <StaticComponent/>
+      <UserList /> */}
       <UserListWithLoading />
     </>
   )
