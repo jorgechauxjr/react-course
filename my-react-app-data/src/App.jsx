@@ -1,6 +1,7 @@
 import './App.css'
 import StaticComponent from './components/StaticComponent/StaticComponent'
 import UserList from './components/UserList/UserList'
+import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <StaticComponent/>
       <UserList />
+      <UserListWithLoading />
     </>
   )
 }
