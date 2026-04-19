@@ -6,6 +6,7 @@ import CounterWithEffect from './components/CounterWithEffect'
 import List from './components/List'
 import CardCountry from './components/CardCountry'
 import CounterV2 from './components/CounterV2'
+import CounterEffectV2 from './components/CounterEffectV2'
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
         ))
       }
       <CounterV2 />
+      <CounterEffectV2 />
       <Card title="Card1" description="This is a description" />
       <Card title="Card Title 2" description="Description 2" />
       <List />
