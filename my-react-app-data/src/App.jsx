@@ -5,6 +5,7 @@ import UserListWithLoading from './components/UserListWithLoading/UserListWithLo
 import StComponentV2 from './components/StComponentV2/StComponentV2'
 import FetchUserList from './components/FetchUserList/FetchUserList'
 import FetchUserListLoader from './components/FetchUserListLoader/FetchUserListLoader'
+import SearchPosts from './components/SearchPosts/SearchPosts'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       {/* <UserListWithLoading /> */}
       {/* <StComponentV2 /> */}
       {/* <FetchUserList /> */}
-      <FetchUserListLoader />
+      {/* <FetchUserListLoader /> */}
+      <SearchPosts />
     </>
   )
 }
