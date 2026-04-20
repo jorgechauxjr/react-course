@@ -4,6 +4,7 @@ import UserList from './components/UserList/UserList'
 import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading'
 import StComponentV2 from './components/StComponentV2/StComponentV2'
 import FetchUserList from './components/FetchUserList/FetchUserList'
+import FetchUserListLoader from './components/FetchUserListLoader/FetchUserListLoader'
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
       {/* <StaticComponent/>
       <UserList />
       {/* <UserListWithLoading /> */}
-      <StComponentV2 />
-      <FetchUserList />
+      {/* <StComponentV2 /> */}
+      {/* <FetchUserList /> */}
+      <FetchUserListLoader />
     </>
   )
 }
