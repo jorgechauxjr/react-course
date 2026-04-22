@@ -1,5 +1,7 @@
 import CounterAdvanced from "./components/CounterAdvanced/CounterAdvanced"
+import CounterWithCustomHook from "./components/CounterWithCustomHook/CounterWithCustomHook";
 import { createContext, useContext, useState } from 'react';
+
 
 // 1.Crear el contexto
 const ThemeContext = createContext();
@@ -42,10 +44,11 @@ function App() {
   return (
     <>
       {/* <CounterAdvanced /> */}
-      <ThemeProvider>
-        <ThemeButton />
+      {/* <ThemeProvider>
+        <ThemeButton /> */}
         {/* Otros componentes */}
-    </ThemeProvider>
+    {/* </ThemeProvider> */}
+    <CounterWithCustomHook />
     </>
   )
 }
