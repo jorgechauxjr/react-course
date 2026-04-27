@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 /**
 Dos Componentes
@@ -31,13 +31,13 @@ const Child = React.memo(({counter}) => {
     return <p>Counter: {counter}</p>
 })
 
-// function ExpensiveCalculation({ num }) {
-//     const result = useMemo(() => {
-//         console.log("Calculando...")
-//         return num * 2;
-//     }, [num])
-//     return <p>Resultado: {result}</p>
-// }
+function ExpensiveCalculation({ num }) {
+    const result = useMemo(() => {
+        console.log("Calculando...")
+        return num * 2;
+    }, [num])
+    return <p>Resultado: {result}</p>
+}
 
 
 // Componente padre
@@ -57,7 +57,7 @@ function CounterWithCallBack() {
             </button>
             <input value={text} onChange={(e) => setText(e.target.value)} placeholder="Escribe algo" />
             <Child counter={counter}/>
-            {/* <ExpensiveCalculation num={counter}/> */}
+            <ExpensiveCalculation num={counter}/>
         </div>
     )
 }
