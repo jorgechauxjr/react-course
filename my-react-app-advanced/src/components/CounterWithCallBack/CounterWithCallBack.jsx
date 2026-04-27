@@ -31,6 +31,7 @@ const Child = React.memo(({counter}) => {
     return <p>Counter: {counter}</p>
 })
 
+// useMemo()
 function ExpensiveCalculation({ num }) {
     const result = useMemo(() => {
         console.log("Calculando...")
@@ -41,6 +42,8 @@ function ExpensiveCalculation({ num }) {
 
 
 // Componente padre
+
+// useCallback
 function CounterWithCallBack() {
     const [counter, setCounter] = useState(0);
     const [text, setText] = useState(""); // Nuevo estado en el padre
