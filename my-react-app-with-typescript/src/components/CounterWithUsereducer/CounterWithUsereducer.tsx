@@ -2,8 +2,14 @@
 
 import { useReducer } from "react";
 
+// Define la forma de tu estado
+type State = { count: number }
+
+// Define las acciones
+type Action = { type: "increment" | "decrement" }
+
 //dependiendo la accion modificamos el estado
-const reducer = (state, action) => {
+const reducer = (state: State, action: Action): State => {
     switch (action.type) {
         case "increment":
             return { count: state.count + 1 };

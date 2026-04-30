@@ -1,6 +1,7 @@
 import './App.css'
 // import Button from './components/Button'
 import Counter from './components/Counter'
+import CounterWithUsereducer from './components/CounterWithUsereducer/CounterWithUsereducer';
 
 /**
  * 
@@ -20,7 +21,8 @@ function App() {
   return (
     <>
       {/* <Button onclick={handleClick} label="Click me"/> */}
-      <Counter />
+      {/* <Counter /> */}
+      <CounterWithUsereducer />
     </>
   )
 }
